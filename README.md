@@ -9,6 +9,7 @@ This project aims to develop a network traffic classifier specifically tailored 
 - **Name:** Aposemat IoT-23
 - **Contents:** A labeled dataset with malicious and benign IoT network traffic
 - **Source:** [https://www.stratosphereips.org/datasets-iot23]
+- **Used dataset dataframe:** [https://drive.usercontent.google.com/download?id=1qKJ4KebFSOxfbrNBP5ebQuWdvII9qimf]
 
 ## Project Structure
 
