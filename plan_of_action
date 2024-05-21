@@ -1,0 +1,5 @@
+Next steps:
+	Use SVM to classify the traffic into malicious and benign using the selected features
+	Check for the accuracy using different metrics
+	Plot the results
+	Check for performance improvement using different classifiers and fine tunning methods (optional)
