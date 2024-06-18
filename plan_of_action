@@ -1,5 +1,9 @@
 Next steps:
 	Use SVM to classify the traffic into malicious and benign using the selected features
-	Check for the accuracy using different metrics
+	Check for the accuracy using different metrics and features
 	Plot the results
 	Check for performance improvement using different classifiers and fine tunning methods (optional)
+
+Extensions:
+	Possible use of tshark in order to livetest the classifier against both malicious and benign classification (DDoS, Ping, DNS)
+	Testing with different datasets
