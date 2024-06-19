@@ -31,6 +31,9 @@ print(combined_df)
 combined_df.to_csv('combined_dataset.csv', index=False)
 df = combined_df
 
+# Choosing only 4 main classes to classify
+df = df[df['type'].isin(['normal', 'password', 'xss', 'scanning'])]
+
 print(df.keys())
 
 
@@ -80,7 +83,7 @@ Y_test = Y_test.to_numpy()
 #####################################################################
 
 
-clf = LinearSVC(max_iter=10)
+clf = LinearSVC(class_weight='balanced', max_iter=1000)
 
 clf.fit(X_train, Y_train)
 
