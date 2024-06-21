@@ -10,7 +10,7 @@ import pickle
 
 
 datasets_dir = 'training_data/'
-create_train_data = False
+create_train_data = True
 
 
 if not os.path.exists(datasets_dir):
@@ -52,7 +52,8 @@ if create_train_data:
   #####################################################################
 
   # Define the number of packets per group
-  group_size = 100
+  group_size = 10
+
 
   # Extract features and labels
   features = df.drop(['label', 'type'], axis=1)
@@ -89,7 +90,7 @@ if create_train_data:
   #                       Splitting the dataset                       #
   #####################################################################
 
-  X_train, X_test, Y_train, Y_test = train_test_split(X_aggregated, Y_aggregated, test_size=0.2, random_state=42)
+  X_train, X_test, Y_train, Y_test = train_test_split(X_aggregated, Y_aggregated, test_size=0.4, random_state=42)
 
   #####################################################################
   #                       Saving to pickle files                      #
@@ -129,7 +130,7 @@ enc = OneHotEncoder(handle_unknown='ignore')
 X_train = enc.fit_transform(X=X_train)
 X_test = enc.transform(X=X_test)
 
-clf = LinearSVC(random_state=42, C=0.1)
+clf = LinearSVC(random_state=42, C=1e-5)
 clf.fit(X_train, Y_train)
 Y_pred = clf.predict(X_test)
 
