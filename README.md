@@ -21,3 +21,5 @@ This project aims to develop a network traffic classifier specifically tailored 
 - Pandas
 - Scikit-learn
 - Matplotlib
+- Scapy
+- 
