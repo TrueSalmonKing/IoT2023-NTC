@@ -6,18 +6,18 @@ This project aims to develop a network traffic classifier specifically tailored 
 
 ## Dataset
 
-- **Name:** Aposemat IoT-23
-- **Contents:** A labeled dataset with malicious and benign IoT network traffic
-- **Source:** [https://www.stratosphereips.org/datasets-iot23]
-- **Used dataset dataframe:** [https://drive.usercontent.google.com/download?id=1qKJ4KebFSOxfbrNBP5ebQuWdvII9qimf]
+- **Name:** TON_IoT Network Traffic Dataset
+- **Contents:** A labeled dataset with malicious and benign IoT network traffic taken from the processed network dataset of TON_IoT Datasets
+- **Source:** [https://research.unsw.edu.au/projects/toniot-datasets]
 
 ## Project Structure
 
-- **`data/`:** Contains the dataset files and dataset dataframe pickle file.
-- `Network Security - Network Traffic Classifier.ipynb`: Main python jupyter notebook used to run the analysis.
+- **`src/`:** Contains the code for acquiring the training dataset and training the classifier.
+- **`training_data/`:** Contains training dataset and the trained classifier and feature encoder.
 
 ## Dependencies
 
 - Python
 - Pandas
+- Scikit-learn
 - Matplotlib
